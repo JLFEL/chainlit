@@ -1,6 +1,7 @@
 [tool.poetry]
 name = "chainlit_JLFEL"
 version = "2.5.5"
+packages = [{include = "chainlit"}]
 keywords = [
     'LLM',
     'Agents',
