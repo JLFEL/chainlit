@@ -233,7 +233,9 @@ class ConnectStdioMCPRequest(BaseModel):
     sessionId: str
     clientType: Literal["stdio"]
     name: str
-    fullCommand: str
+    command: str
+    args: Optional[str]
+    envs: Optional[str]
 
 
 class ConnectSseMCPRequest(BaseModel):
@@ -241,6 +243,7 @@ class ConnectSseMCPRequest(BaseModel):
     clientType: Literal["sse"]
     name: str
     url: str
+    headers: Optional[str]
 
 
 ConnectMCPRequest = Union[ConnectStdioMCPRequest, ConnectSseMCPRequest]
