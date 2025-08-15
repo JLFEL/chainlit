@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "chainlit"
+name = "chainlit_JLFEL"
 version = "2.6.9"
 keywords = [
     'LLM',
